@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Mazda_CX-60"
+
 generations:
   - name: "First Generation"
     start_year: 2022
