@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22F449
+test_cases:
+- expected_values:
+    CX60_APP_ECM: 15.68627
+  response: 7E80462F44928
+- expected_values:
+    CX60_APP_ECM: 47.05882
+  response: 7E80462F44978

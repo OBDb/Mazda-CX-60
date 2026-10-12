@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.220307
+test_cases:
+- expected_values:
+    CX60_FP_LD: 4.99878
+  response: '7E8056203070666'
+- expected_values:
+    CX60_FP_LD: 63.29041
+  response: '7E8056203075103'
+- expected_values:
+    CX60_FP_LD: 64.83459
+  response: 7E80562030752FD
+- expected_values:
+    CX60_FP_LD: 95.00122
+  response: 7E805620307799A

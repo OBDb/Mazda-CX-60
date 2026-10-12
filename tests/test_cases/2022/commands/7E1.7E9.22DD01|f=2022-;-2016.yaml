@@ -1,0 +1,14 @@
+command_id: 7E1.7E9.22DD01|f=2022-;-2016
+test_cases:
+- expected_values:
+    CX60_TRANS_ODO: 60604
+  response: 7E90662DD0100ECBC
+- expected_values:
+    CX60_TRANS_ODO: 60661
+  response: 7E90662DD0100ECF5
+- expected_values:
+    CX60_TRANS_ODO: 60725
+  response: 7E90662DD0100ED35
+- expected_values:
+    CX60_TRANS_ODO: 60981
+  response: 7E90662DD0100EE35

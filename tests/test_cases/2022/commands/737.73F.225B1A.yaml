@@ -1,0 +1,8 @@
+command_id: 737.73F.225B1A
+test_cases:
+- expected_values:
+    CX60_SEAT_BUCKLE: 0
+  response: 73F07625B1A00000000
+- expected_values:
+    CX60_SEAT_BUCKLE: 1
+  response: 73F07625B1A02000000

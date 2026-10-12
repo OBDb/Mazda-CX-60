@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.220416
+test_cases:
+- expected_values:
+    CX60_LOW_OIL_P_SWITCH: 0
+  response: '7E80762041600000000'

@@ -1,0 +1,8 @@
+command_id: 730.738.223301
+test_cases:
+- expected_values:
+    CX60_STEER_WHL_ANG: 0
+  response: '7380462330100'
+- expected_values:
+    CX60_STEER_WHL_ANG: 324
+  response: '7380462330151'

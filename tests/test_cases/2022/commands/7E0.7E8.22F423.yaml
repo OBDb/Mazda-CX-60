@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22F423
+test_cases:
+- expected_values:
+    CX60_FUEL_P: 6500
+  response: 7E80562F4230041
+- expected_values:
+    CX60_FUEL_P: 179200
+  response: 7E80562F4230700
+- expected_values:
+    CX60_FUEL_P: 230000
+  response: 7E80562F42308FC
+- expected_values:
+    CX60_FUEL_P: 237200
+  response: 7E80562F4230944

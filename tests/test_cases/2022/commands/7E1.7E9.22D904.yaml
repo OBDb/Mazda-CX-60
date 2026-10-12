@@ -1,0 +1,5 @@
+command_id: 7E1.7E9.22D904
+test_cases:
+- expected_values:
+    CX60_ATF_T_VAR_2: 0
+  response: 7E90762D90400000000

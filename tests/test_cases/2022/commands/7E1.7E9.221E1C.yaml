@@ -1,0 +1,14 @@
+command_id: 7E1.7E9.221E1C
+test_cases:
+- expected_values:
+    CX60_TRANS_T_V6: 17.875
+  response: 7E905621E1C011E
+- expected_values:
+    CX60_TRANS_T_V6: 31.9375
+  response: 7E905621E1C01FF
+- expected_values:
+    CX60_TRANS_T_V6: 32
+  response: 7E905621E1C0200
+- expected_values:
+    CX60_TRANS_T_V6: 80.3125
+  response: 7E905621E1C0505

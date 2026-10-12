@@ -1,0 +1,14 @@
+command_id: 775.77D.22D111
+test_cases:
+- expected_values:
+    CX60_TAILGATE_POWER_SUP: 12.8
+  response: 77D0462D11180
+- expected_values:
+    CX60_TAILGATE_POWER_SUP: 13.7
+  response: 77D0462D11189
+- expected_values:
+    CX60_TAILGATE_POWER_SUP: 13.8
+  response: 77D0462D1118A
+- expected_values:
+    CX60_TAILGATE_POWER_SUP: 13.9
+  response: 77D0462D1118B

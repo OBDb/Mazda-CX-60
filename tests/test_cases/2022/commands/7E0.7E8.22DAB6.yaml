@@ -1,0 +1,9 @@
+command_id: 7E0.7E8.22DAB6
+test_cases:
+- expected_values:
+    CX60_MIS_AVG_1: 9280
+    CX60_MIS_AVG_2: 14
+    CX60_MIS_AVG_3: 55326
+  response: |-
+    7E8100A62DAB6244000
+    7E8210ED81E10000000

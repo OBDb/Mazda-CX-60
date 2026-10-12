@@ -1,0 +1,29 @@
+command_id: 7E3.7EB.22F405
+test_cases:
+- expected_values:
+    CX60_7E3_ECT: 20
+  response: 7EB0462F4053C
+- expected_values:
+    CX60_7E3_ECT: 21
+  response: 7EB0462F4053D
+- expected_values:
+    CX60_7E3_ECT: 22
+  response: 7EB0462F4053E
+- expected_values:
+    CX60_7E3_ECT: 23
+  response: 7EB0462F4053F
+- expected_values:
+    CX60_7E3_ECT: 24
+  response: 7EB0462F40540
+- expected_values:
+    CX60_7E3_ECT: 26
+  response: 7EB0462F40542
+- expected_values:
+    CX60_7E3_ECT: 36
+  response: 7EB0462F4054C
+- expected_values:
+    CX60_7E3_ECT: 44
+  response: 7EB0462F40554
+- expected_values:
+    CX60_7E3_ECT: 50
+  response: 7EB0462F4055A

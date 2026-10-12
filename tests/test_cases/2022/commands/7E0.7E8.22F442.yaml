@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.22F442
+test_cases:
+- expected_values:
+    CX60_BAT_V_7E0: 13.891
+  response: 7E80562F4423643
+- expected_values:
+    CX60_BAT_V_7E0: 13.894
+  response: 7E80562F4423646
+- expected_values:
+    CX60_BAT_V_7E0: 13.896
+  response: 7E80562F4423648
+- expected_values:
+    CX60_BAT_V_7E0: 13.898
+  response: 7E80562F442364A
+- expected_values:
+    CX60_BAT_V_7E0: 13.9
+  response: 7E80562F442364C
+- expected_values:
+    CX60_BAT_V_7E0: 13.901
+  response: 7E80562F442364D
+- expected_values:
+    CX60_BAT_V_7E0: 13.906
+  response: 7E80562F4423652

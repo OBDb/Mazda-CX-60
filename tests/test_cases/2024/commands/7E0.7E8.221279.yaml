@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221279
+test_cases:
+- expected_values:
+    CX60_IAT_SENS_V: 0.37634
+  response: 7E805621279004D
+- expected_values:
+    CX60_IAT_SENS_V: 0.58162
+  response: '7E8056212790077'

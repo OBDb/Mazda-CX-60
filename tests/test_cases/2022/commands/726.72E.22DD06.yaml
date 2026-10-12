@@ -1,0 +1,11 @@
+command_id: 726.72E.22DD06
+test_cases:
+- expected_values:
+    CX60_POWER_MODE: -192
+  response: 72E0462DD0600
+- expected_values:
+    CX60_POWER_MODE: -190
+  response: 72E0462DD0602
+- expected_values:
+    CX60_POWER_MODE: -189
+  response: 72E0462DD0603

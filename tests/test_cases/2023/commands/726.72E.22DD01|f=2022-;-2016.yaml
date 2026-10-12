@@ -1,0 +1,14 @@
+command_id: 726.72E.22DD01|f=2022-;-2016
+test_cases:
+- expected_values:
+    CX60_ODO_726: 38981
+  response: 72E0662DD01009845
+- expected_values:
+    CX60_ODO_726: 39167
+  response: 72E0662DD010098FF
+- expected_values:
+    CX60_ODO_726: 39168
+  response: 72E0662DD01009900
+- expected_values:
+    CX60_ODO_726: 55296
+  response: 72E0662DD0100D800

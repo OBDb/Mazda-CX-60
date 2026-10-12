@@ -1,0 +1,11 @@
+command_id: 723.72B.22F41F
+test_cases:
+- expected_values:
+    CX60_ENGINE_RUN_TIME: 0
+  response: 72B0562F41F0000
+- expected_values:
+    CX60_ENGINE_RUN_TIME: 255
+  response: 72B0562F41F00FF
+- expected_values:
+    CX60_ENGINE_RUN_TIME: 4352
+  response: 72B0562F41F1100

@@ -1,0 +1,14 @@
+command_id: 723.72B.22DD01
+test_cases:
+- expected_values:
+    CX60_ODO_723: 41670
+  response: 72B0662DD0100A2C6
+- expected_values:
+    CX60_ODO_723: 41727
+  response: 72B0662DD0100A2FF
+- expected_values:
+    CX60_ODO_723: 41728
+  response: 72B0662DD0100A300
+- expected_values:
+    CX60_ODO_723: 42240
+  response: 72B0662DD0100A500

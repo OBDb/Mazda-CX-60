@@ -1,4 +1,503 @@
 { "commands": [
-
+{ "hdr": "720", "rax": "728", "cmd": {"22": "61B1"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_FLV", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "480D"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_HVBAT_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "mul": 10, "div": 1000, "unit": "volts" }, "name": "Battery pack voltage", "suggestedMetric": "tractionBatteryVoltage"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "D90E"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_12V_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "volts" }, "name": "12V battery voltage"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "D914"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_HV_EV_BATT_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "High voltage battery state of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DCE1"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_IG_ON_TIMER", "path": "Engine", "fmt": { "len": 16, "max": 1092.25, "div": 60, "unit": "minutes" }, "name": "Engine runtime"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DCE2"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_12V_SOC_723", "path": "Battery", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "12V battery state of charge"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DD01"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_ODO_723", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Total distance", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "DD05"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_AAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "F40C"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_ENGINE_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "F40D"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_VEHICLE_SPEED", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "723", "rax": "72B", "cmd": {"22": "F41F"}, "freq": 1, "dbgfilter": { "years": [2023], "from": 2025 },
+  "signals": [
+    {"id": "CX60_ENGINE_RUN_TIME", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Engine run time"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D922"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TP_FL_726", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front left pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D923"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TP_FR_726", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Front right pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D924"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TP_RL_726", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear left pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D925"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TP_RR_726", "path": "Tires", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear right pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D926"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TT_FL_726", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front left temperature", "suggestedMetric": "frontLeftTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D927"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TT_FR_726", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Front right temperature", "suggestedMetric": "frontRightTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D928"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TT_RL_726", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear left temperature", "suggestedMetric": "rearLeftTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "D929"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TT_RR_726", "path": "Tires", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Rear right temperature", "suggestedMetric": "rearRightTireTemperature"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "DA05"}, "freq": 0.25, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_BRAKE_SWITCH", "path": "Control", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2016, "from": 2022 }, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_ODO_726", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer, instrument panel", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "726", "rax": "72E", "cmd": {"22": "DD06"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_POWER_MODE", "path": "Engine", "fmt": { "len": 8, "max": 63, "min": -192, "add": -192, "unit": "scalar" }, "name": "Power mode"}
+  ]},
+{ "hdr": "730", "rax": "738", "cmd": {"22": "3301"}, "freq": 0.25, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_STEER_WHL_ANG", "path": "Tires", "fmt": { "len": 8, "max": 1020, "mul": 4, "unit": "unknown" }, "name": "Steering wheel angle velocity"}
+  ]},
+{ "hdr": "730", "rax": "738", "cmd": {"22": "330C"}, "freq": 0.25, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_STEER_SHFT_TQ", "path": "Engine", "fmt": { "len": 8, "max": 12.8, "min": -12.7, "div": 10, "add": -12.7, "unit": "newtonMeters" }, "name": "Steering shaft torque"}
+  ]},
+{ "hdr": "733", "rax": "73B", "cmd": {"22": "D111"}, "freq": 5, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_CTRL_MODULE_POWER", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Control module power supply"}
+  ]},
+{ "hdr": "737", "cmd": {"22": "D901"}, "freq": 5, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_V_SUP", "path": "Battery", "fmt": { "len": 8, "max": 20.4, "mul": 2, "div": 25, "nullmax": 20.4, "unit": "volts" }, "name": "Voltage supply"}
+  ]},
+{ "hdr": "737", "rax": "73F", "cmd": {"22": "5B19"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_SEAT_BUCKLE_DRIVER", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "scalar" }, "name": "Seat buckle driver locked"}
+  ]},
+{ "hdr": "737", "rax": "73F", "cmd": {"22": "5B1A"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_SEAT_BUCKLE", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "scalar" }, "name": "Seat buckle passenger locked"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B00"}, "freq": 3, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_PARKING_BRAKE_760", "path": "Control", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Parking brake state"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B05"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_DTSC_SWITCH", "path": "Engine", "fmt": { "len": 8, "max": 2.98, "min": -1, "div": 64, "add": -1, "unit": "scalar" }, "name": "Traction control switch indicator"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B06"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_FR_VSS", "path": "Movement", "fmt": { "len": 8, "max": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B07"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_FL_VSS", "path": "Movement", "fmt": { "len": 8, "max": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B08"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_RR_VSS", "path": "Movement", "fmt": { "len": 8, "max": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B09"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_RL_VSS", "path": "Movement", "fmt": { "len": 8, "max": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B0B"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_YAW_RATE_SIG", "path": "Engine", "fmt": { "len": 16, "max": 6553, "min": -6553, "div": 5, "sign": true, "unit": "unknown" }, "name": "Yaw rate signal"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B0C"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_LAT_ANG", "path": "Movement", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Lateral angle, raw count"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B0D"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_BRK_FL_P", "path": "Control", "fmt": { "len": 16, "max": 65535, "nullmax": 65535, "unit": "scalar" }, "name": "Brake hydraulic pressure, raw count"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "2B11"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_LAT_G_760", "path": "Movement", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Lateral acceleration, raw count"}
+  ]},
+{ "hdr": "760", "rax": "768", "cmd": {"22": "3302"}, "freq": 0.25, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_STEER_ANG_ACT", "path": "Engine", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "unknown" }, "name": "Steering angle, actual value"}
+  ]},
+{ "hdr": "775", "rax": "77D", "cmd": {"22": "D111"}, "freq": 5, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_TAILGATE_POWER_SUP", "path": "Electrical", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Tailgate power supply"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0202"}, "freq": 3600, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_DTC_CNTD", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of DTCs"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0301"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_MAP", "path": "Engine", "fmt": { "len": 16, "max": 5, "div": 1024, "unit": "volts" }, "name": "Manifold absolute pressure sensor voltage", "description": "A properly functioning sensor should read around 1 to 1.5 volts at idle."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0307"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_FP_LD", "path": "Fuel", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 32768, "unit": "percent" }, "name": "Fuel pump load"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0316"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_VCT_INT_DUTY", "fmt": { "len": 16, "max": 100, "mul": 0.0030517578, "unit": "percent" }, "name": "Variable camshaft timing, intake camshaft solenoid duty cycle"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0317"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_VCT_EXH_DUTY", "fmt": { "len": 16, "max": 100, "mul": 0.0030517578, "unit": "percent" }, "name": "Variable camshaft timing, exhaust camshaft solenoid duty cycle"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0318"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_VCT_INT_ACT", "fmt": { "len": 16, "max": 2047.9375, "min": -2048, "div": 16, "sign": true, "unit": "degrees" }, "name": "Variable camshaft timing, intake camshaft actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0319"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_VCT_EXH_ACT", "fmt": { "len": 16, "max": 50, "div": 16, "unit": "degrees" }, "name": "Variable camshaft timing, exhaust camshaft actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0324"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_HPFP_V", "fmt": { "len": 16, "max": 5, "div": 204.6, "unit": "volts" }, "name": "High pressure fuel rail sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "032B"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_ACC_POS", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "035F"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_RO2_V", "fmt": { "len": 16, "max": 1, "div": 1024, "unit": "volts" }, "name": "Rear O2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0393"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_AC_P", "path": "Climate", "fmt": { "len": 16, "max": 1000, "mul": 245251, "div": 845473, "unit": "psi" }, "name": "A/C compressor pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "03BA"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_AAT_V", "fmt": { "len": 16, "max": 5, "mul": 0.0048875855, "unit": "volts" }, "name": "Ambient air temperature sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "03BD"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_CL_LC", "fmt": { "len": 16, "max": 3.9, "min": -4, "div": 8192, "sign": true, "unit": "scalar" }, "name": "Closed loop lambda correction"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "03DC"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_HPFP_DES", "fmt": { "len": 16, "max": 6000, "mul": 1.4503773969, "unit": "psi" }, "name": "High pressure fuel pressure desired"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "03E8"}, "freq": 3600, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_OAR", "fmt": { "len": 16, "max": 1, "div": 16384, "sign": true, "unit": "scalar" }, "name": "Octane adjust ratio"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "03EC"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_IGN_CORR_CYL1", "path": "Engine", "fmt": { "len": 16, "max": 63.9, "min": -64, "div": 512, "sign": true, "unit": "degrees" }, "name": "Ignition correction, cylinder 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0415"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_EOP", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0416"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_LOW_OIL_P_SWITCH", "path": "Engine", "fmt": {"bix": 22, "len": 1, "max": 1, "unit": "offon" }, "name": "Low oil pressure switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0522"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "053B"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_CATDMG_MIS_1",           "path": "Engine", "fmt": {            "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Catalyst damaging misfires, cylinder 1"},
+    {"id": "CX60_CATDMG_MIS_2",           "path": "Engine", "fmt": {"bix": 8,   "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Catalyst damaging misfires, cylinder 2"},
+    {"id": "CX60_CATDMG_MIS_3",           "path": "Engine", "fmt": {"bix": 16,  "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Catalyst damaging misfires, cylinder 3"},
+    {"id": "CX60_CATDMG_MIS_4",           "path": "Engine", "fmt": {"bix": 24,  "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Catalyst damaging misfires, cylinder 4"},
+    {"id": "CX60_EMISSION_FAILURE_MIS_1", "path": "Engine", "fmt": {"bix": 64,  "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Emission failure misfires, cylinder 1"},
+    {"id": "CX60_EMISSION_FAILURE_MIS_2", "path": "Engine", "fmt": {"bix": 72,  "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Emission failure misfires, cylinder 2"},
+    {"id": "CX60_EMISSION_FAILURE_MIS_3", "path": "Engine", "fmt": {"bix": 80,  "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Emission failure misfires, cylinder 3"},
+    {"id": "CX60_EMISSION_FAILURE_MIS_4", "path": "Engine", "fmt": {"bix": 88,  "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Emission failure misfires, cylinder 4"},
+    {"id": "CX60_CATDMG_MIS_TOT",         "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total during this trip"},
+    {"id": "CX60_EMISSION_FAILURE_MIS",   "path": "Engine", "fmt": {"bix": 176, "len": 8,  "max": 255,   "unit": "scalar" }, "name": "Emission failure misfires total during this trip"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "057D"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_AAT_ALT", "path": "Climate", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Ambient temperature, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0580"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_GRILL_SHUTTER_POS", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Grill shutter position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0700"}, "freq": 5, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_IAT_FAULT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Intake temperature fault"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0707"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_GRILL_SHUT_DC", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Grill shutter duty cycle"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0914"}, "freq": 0.5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_APP1_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "APP sensor 1 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0915"}, "freq": 0.5, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_APP2_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "APP sensor 2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0917"}, "freq": 0.5, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TP1_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Throttle position 1 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0918"}, "freq": 0.5, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TP2_V", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Throttle position 2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "091A"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_ETC_DSD_DEG", "path": "Engine", "fmt": { "len": 16, "max": 127.9, "div": 512, "unit": "degrees" }, "name": "Throttle control desired"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "093C"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_ETC_ACT_DEG", "path": "Engine", "fmt": { "len": 16, "max": 127.9, "div": 512, "unit": "degrees" }, "name": "Throttle position actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "099B"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_AC_STATE", "path": "Climate", "fmt": { "len": 8, "max": 1, "unit": "offon" }, "name": "A/C compressor, state"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1166"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_EVAP_PURGE_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 32768, "unit": "percent" }, "name": "Evaporative purge"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1279"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_IAT_SENS_V", "path": "Engine", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 1023, "unit": "volts" }, "name": "Intake temperature sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1310"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_EOT", "path": "Engine", "fmt": { "len": 16, "max": 615.35, "min": -40, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "16E8"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_GEN_FC", "path": "Engine", "fmt": { "len": 16, "max": 200, "mul": 200, "div": 65535, "unit": "percent" }, "name": "Generator field coil control duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1E12"}, "freq": 0.25, "filter": { "to": 2016, "from": 2022 }, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_GEAR", "path": "Transmission", "name": "Current gear", "description": "The automatic transmission gear.", "fmt": {"len": 8, "map": {
+          "1":  { "description": "First gear",   "value": "1" },
+          "2":  { "description": "Second gear",  "value": "2" },
+          "3":  { "description": "Third gear",   "value": "3" },
+          "4":  { "description": "Fourth gear",  "value": "4" },
+          "5":  { "description": "Fifth gear",   "value": "5" },
+          "6":  { "description": "Sixth gear",   "value": "6" },
+          "7":  { "description": "Seventh gear", "value": "7" },
+          "8":  { "description": "Eighth gear",  "value": "8" },
+          "9":  { "description": "Ninth gear",   "value": "9" },
+          "10": { "description": "Tenth gear",   "value": "10" }
+        }}
+    }
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1E16"}, "freq": 3600, "filter": { "to": 2016, "from": 2022 }, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_AXLE_GEAR_RATIO_MEAS", "path": "Transmission", "fmt": { "len": 16, "max": 10, "div": 4096, "unit": "scalar" }, "name": "Axle gear ratio, measured"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1E1C"}, "freq": 5, "filter": { "to": 2016, "from": 2022 }, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_TOT_7E0", "path": "Engine", "fmt": { "len": 16, "max": 500, "min": -500, "div": 16, "sign": true, "unit": "celsius" }, "name": "Transmission oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1E1F"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_GEAR_ENG", "path": "Transmission", "fmt": { "len": 8, "max": 6, "unit": "scalar" }, "name": "Gear, engaged"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "9800"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_AC_P_SENS_V", "path": "Climate", "fmt": { "len": 16, "max": 5, "div": 1024, "sign": true, "unit": "volts" }, "name": "A/C compressor pressure sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "DA01"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_OIL_P_SOLENOID_VLV", "path": "Engine", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Oil pressure solenoid valve, open"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "DAB6"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_MIS_AVG_1", "path": "Engine", "fmt": {            "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 1 misfire average"},
+    {"id": "CX60_MIS_AVG_2", "path": "Engine", "fmt": {"bix": 16,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 2 misfire average"},
+    {"id": "CX60_MIS_AVG_3", "path": "Engine", "fmt": {"bix": 32,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 3 misfire average"},
+    {"id": "CX60_MIS_AVG_4", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 4 misfire average"},
+    {"id": "CX60_MIS_AVG_5", "path": "Engine", "fmt": {"bix": 64,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 5 misfire average"},
+    {"id": "CX60_MIS_AVG_6", "path": "Engine", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 6 misfire average"},
+    {"id": "CX60_MIS_AVG_7", "path": "Engine", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 7 misfire average"},
+    {"id": "CX60_MIS_AVG_8", "path": "Engine", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 8 misfire average"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "DD01"}, "freq": 30, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F404"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_ENG_LOAD_PCT", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Engine load", "suggestedMetric": "engineLoad"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F405"}, "freq": 5, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_CYL_HEAD_T_7E0_2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Cylinder head temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F406"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_STFT", "path": "Engine", "fmt": { "len": 8, "max": 99.2, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Fuel trim, short term", "suggestedMetric": "shortTermFuelTrim"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F407"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_LTFT", "path": "Engine", "fmt": { "len": 8, "max": 99.2, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Fuel trim, long term"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40B"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_MAP_7E0", "path": "Engine", "fmt": { "len": 8, "max": 36, "mul": 10000, "div": 68947, "unit": "psi" }, "name": "Manifold pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40C"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40D"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40E"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_IGN_ANG_BTDC", "path": "Engine", "fmt": { "len": 8, "max": 63.5, "min": -64, "div": 2, "add": -64, "unit": "scalar" }, "name": "Ignition angle before top dead center"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40F"}, "freq": 5, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_IAT_ALT2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake temperature, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F411"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_INT_SHUTTER_VLV_POS", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Intake shutter valve position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F41F"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_RUN_TIME", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Engine run time"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F421"}, "freq": 3600, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_MIL_DIST", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with MIL"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F423"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_FUEL_P", "path": "Fuel", "fmt": { "len": 16, "max": 6553500, "mul": 100, "unit": "unknown" }, "name": "Fuel pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F42F"}, "freq": 30, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F430"}, "freq": 3600, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_WARMUP_CLR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Warm-ups since DTC clear"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F431"}, "freq": 3600, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_DIST_DTC_CLR", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance since DTC clear"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F433"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_BAROMETRIC_P", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F434"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_AIR_FUEL_RAT", "path": "Fuel", "fmt": { "len": 16, "max": 29.2801, "mul": 0.000446787, "unit": "scalar" }, "name": "Air/fuel ratio"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F43C"}, "freq": 5, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_CAT_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F442"}, "freq": 5, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_BAT_V_7E0", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "Battery voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F443"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_ENG_LOAD_ACT", "path": "Engine", "fmt": { "len": 16, "max": 25700, "mul": 100, "div": 255, "unit": "percent" }, "name": "Engine load, actual", "suggestedMetric": "engineLoad"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F449"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_APP_ECM", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F45E"}, "freq": 1, "filter": { "to": 2016, "from": 2022 }, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_ENG_FUEL_RATE", "path": "Fuel", "fmt": { "len": 16, "max": 3276.75, "div": 20, "unit": "liters" }, "name": "Engine fuel rate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F462"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_PCM_ACT_ENG_PCT_TRQ", "path": "Engine", "fmt": { "len": 8, "max": 100, "add": -125, "unit": "percent" }, "name": "Actual engine percent torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F463"}, "freq": 3600, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_PCM_ENG_REFERENCE_TRQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Engine reference torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F4A6"}, "freq": 30, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "CX60_PCM_VEH_ODO", "path": "Trips", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "kilometers" }, "name": "Vehicle odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E12"}, "freq": 0.25, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_GEAR_7E1", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E16"}, "freq": 0.25, "dbgfilter": { "from": 2024 },
+  "signals": [
+    {"id": "CX60_ACT_GEAR_RAT", "path": "Transmission", "fmt": { "len": 16, "max": 15.99, "div": 4096, "unit": "scalar" }, "name": "AT, actual gear ratio"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E1B"}, "freq": 1, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_SLAVE_T", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Slave A/T"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1E1C"}, "freq": 1, "dbgfilter": { "from": 2025 },
+  "signals": [
+    {"id": "CX60_TRANS_T_V6", "path": "Transmission", "fmt": { "len": 16, "max": 500, "min": -500, "div": 16, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1EC7"}, "freq": 0.25, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_TQ_DES", "path": "Engine", "fmt": { "len": 16, "max": 655, "min": -655, "div": 50, "sign": true, "unit": "newtonMeters" }, "name": "Torque, desired"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1EE4"}, "freq": 0.25, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_TQ_ACT", "path": "Engine", "fmt": { "len": 16, "max": 655, "min": -655, "div": 50, "sign": true, "unit": "newtonMeters" }, "name": "Torque, actual"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "D904"}, "freq": 5, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_ATF_T_VAR_2", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 2"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2016, "from": 2022 }, "dbgfilter": { "from": 2024 },
+  "signals": [
+    {"id": "CX60_TRANS_ODO", "path": "Transmission", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Transmission odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E3", "rax": "7EB", "cmd": {"22": "F405"}, "freq": 5, "dbgfilter": { "from": 2023 },
+  "signals": [
+    {"id": "CX60_7E3_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
+  ]}
 ]
 }
