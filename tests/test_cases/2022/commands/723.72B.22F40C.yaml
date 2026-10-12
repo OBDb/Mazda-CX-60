@@ -1,0 +1,11 @@
+command_id: 723.72B.22F40C
+test_cases:
+- expected_values:
+    CX60_ENGINE_RPM: 0
+  response: 72B0562F40C0000
+- expected_values:
+    CX60_ENGINE_RPM: 1663.25
+  response: 72B0562F40C19FD
+- expected_values:
+    CX60_ENGINE_RPM: 2836
+  response: 72B0562F40C2C50

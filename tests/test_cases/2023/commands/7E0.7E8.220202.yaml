@@ -1,0 +1,127 @@
+command_id: 7E0.7E8.220202
+test_cases:
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: '7E80462020200'
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E80641800224004D
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E81008410B160D6010
+    7E82102150000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E81008410B180D3910
+    7E821009B0000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E81008410B1B0C0BAD
+    7E8210D000000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E81008410B200D0010
+    7E821009F0000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E81008410B5C0D1910
+    7E8210BFF0000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E81008411004AF0B39
+    7E8210D030000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100A410B1B0D000F
+    7E8214810013E000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100A410B1F0D330F
+    7E821441001E8000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100A410D00100000
+    7E8210A570B66000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100A415B800B390D
+    7E821161004A8000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100A415BA20B400D
+    7E821001007FB000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100B410B2D0C0F71
+    7E8210D0010032B0000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100B410B320C0F28
+    7E8210D041002EA0000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100C4105620B170D
+    7E8213A0F381001F800
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100C41058D0B1C0D
+    7E8211F0F4F1002BA00
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100D410B260C12AD
+    7E8210D1A1004665BA1
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100E410B5F0C2195
+    7E8210D251011A33C14
+    7E82204000000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100F4105670B540C
+    7E82114150D3A0F3E10
+    7E82208820000000000
+- expected_values:
+    CX60_DTC_CNTD: 0
+  response: |-
+    7E80462020200
+    7E8100F41057F0B390C
+    7E82111590D410F4510
+    7E822036C0000000000

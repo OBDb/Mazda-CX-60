@@ -1,0 +1,11 @@
+command_id: 723.72B.22D90E
+test_cases:
+- expected_values:
+    CX60_12V_VOLTAGE: 11.99
+  response: 72B0562D90E04AF
+- expected_values:
+    CX60_12V_VOLTAGE: 12.79
+  response: 72B0562D90E04FF
+- expected_values:
+    CX60_12V_VOLTAGE: 12.8
+  response: 72B0562D90E0500

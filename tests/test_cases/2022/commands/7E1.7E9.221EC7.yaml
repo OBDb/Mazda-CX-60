@@ -1,0 +1,11 @@
+command_id: 7E1.7E9.221EC7
+test_cases:
+- expected_values:
+    CX60_TQ_DES: 0
+  response: 7E905621EC70000
+- expected_values:
+    CX60_TQ_DES: 71
+  response: 7E905621EC70DDE
+- expected_values:
+    CX60_TQ_DES: -15
+  response: 7E905621EC7FD12

@@ -1,0 +1,8 @@
+command_id: 723.72B.22DCE2
+test_cases:
+- expected_values:
+    CX60_12V_SOC_723: 66
+  response: 72B0462DCE284
+- expected_values:
+    CX60_12V_SOC_723: 100
+  response: 72B0462DCE2FE

@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22F405
+test_cases:
+- expected_values:
+    CX60_CYL_HEAD_T_7E0_2: 22
+  response: 7E80462F4053E
+- expected_values:
+    CX60_CYL_HEAD_T_7E0_2: 23
+  response: 7E80462F4053F

@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.22F411
+test_cases:
+- expected_values:
+    CX60_INT_SHUTTER_VLV_POS: 10.98039
+  response: 7E80462F4111C
+- expected_values:
+    CX60_INT_SHUTTER_VLV_POS: 13.33333
+  response: 7E80462F41122
+- expected_values:
+    CX60_INT_SHUTTER_VLV_POS: 17.2549
+  response: 7E80462F4112C
+- expected_values:
+    CX60_INT_SHUTTER_VLV_POS: 20
+  response: 7E80462F41133
+- expected_values:
+    CX60_INT_SHUTTER_VLV_POS: 21.17647
+  response: 7E80462F41136
+- expected_values:
+    CX60_INT_SHUTTER_VLV_POS: 27.45098
+  response: 7E80462F41146
+- expected_values:
+    CX60_INT_SHUTTER_VLV_POS: 30.19608
+  response: 7E80462F4114D

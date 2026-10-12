@@ -1,0 +1,5 @@
+command_id: 737.73F.225B19
+test_cases:
+- expected_values:
+    CX60_SEAT_BUCKLE_DRIVER: 1
+  response: 73F07625B1902000000

@@ -1,0 +1,14 @@
+command_id: 723.72B.22D914
+test_cases:
+- expected_values:
+    CX60_HV_EV_BATT_SOC: 27.1
+  response: 72B0562D914010F
+- expected_values:
+    CX60_HV_EV_BATT_SOC: 51.1
+  response: 72B0562D91401FF
+- expected_values:
+    CX60_HV_EV_BATT_SOC: 51.2
+  response: 72B0562D9140200
+- expected_values:
+    CX60_HV_EV_BATT_SOC: 77
+  response: 72B0562D9140302

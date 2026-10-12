@@ -1,0 +1,8 @@
+command_id: 723.72B.22DD05
+test_cases:
+- expected_values:
+    CX60_AAT: 22
+  response: 72B0462DD053E
+- expected_values:
+    CX60_AAT: 40
+  response: 72B0462DD0550

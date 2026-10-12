@@ -1,0 +1,23 @@
+command_id: 7E1.7E9.221E16
+test_cases:
+- expected_values:
+    CX60_ACT_GEAR_RAT: 0
+  response: 7E905621E160000
+- expected_values:
+    CX60_ACT_GEAR_RAT: 1
+  response: 7E905621E161000
+- expected_values:
+    CX60_ACT_GEAR_RAT: 1.30054
+  response: 7E905621E1614CF
+- expected_values:
+    CX60_ACT_GEAR_RAT: 1.70581
+  response: 7E905621E161B4B
+- expected_values:
+    CX60_ACT_GEAR_RAT: 2.12964
+  response: 7E905621E162213
+- expected_values:
+    CX60_ACT_GEAR_RAT: 3.30371
+  response: 7E905621E1634DC
+- expected_values:
+    CX60_ACT_GEAR_RAT: 5.25879
+  response: 7E905621E165424

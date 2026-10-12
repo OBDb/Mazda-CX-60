@@ -1,0 +1,14 @@
+command_id: 760.768.223302
+test_cases:
+- expected_values:
+    CX60_STEER_ANG_ACT: 446.7
+  response: '768056233021173'
+- expected_values:
+    CX60_STEER_ANG_ACT: 794.6
+  response: 768056233021F0A
+- expected_values:
+    CX60_STEER_ANG_ACT: 816.6
+  response: 768056233021FE6
+- expected_values:
+    CX60_STEER_ANG_ACT: 1249
+  response: 7680562330230CA

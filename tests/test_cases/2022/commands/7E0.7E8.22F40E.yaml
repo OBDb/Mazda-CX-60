@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22F40E
+test_cases:
+- expected_values:
+    CX60_IGN_ANG_BTDC: 0
+  response: 7E80462F40E80
+- expected_values:
+    CX60_IGN_ANG_BTDC: 39.5
+  response: 7E80462F40ECF

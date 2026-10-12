@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.220917
+test_cases:
+- expected_values:
+    CX60_TP1_V: 0.498
+  response: 7E80562091701F2
+- expected_values:
+    CX60_TP1_V: 0.767
+  response: 7E80562091702FF
+- expected_values:
+    CX60_TP1_V: 0.768
+  response: '7E8056209170300'
+- expected_values:
+    CX60_TP1_V: 3.871
+  response: 7E8056209170F1F

@@ -1,0 +1,5 @@
+command_id: 737.22D901
+test_cases:
+- expected_values:
+    CX60_V_SUP: null
+  response: 73F0562D901FF00

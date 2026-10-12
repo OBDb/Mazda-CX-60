@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22F43C
+test_cases:
+- expected_values:
+    CX60_CAT_TEMP: 16.2
+  response: 7E80562F43C0232
+- expected_values:
+    CX60_CAT_TEMP: 36.6
+  response: 7E80562F43C02FE
+- expected_values:
+    CX60_CAT_TEMP: 36.9
+  response: 7E80562F43C0301
+- expected_values:
+    CX60_CAT_TEMP: 831.4
+  response: 7E80562F43C220A

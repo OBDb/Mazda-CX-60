@@ -1,0 +1,8 @@
+command_id: 726.72E.22D927
+test_cases:
+- expected_values:
+    CX60_TT_FR_726: 21
+  response: 72E0462D92747
+- expected_values:
+    CX60_TT_FR_726: 45
+  response: 72E0462D9275F

@@ -1,0 +1,14 @@
+command_id: 723.72B.22480D
+test_cases:
+- expected_values:
+    CX60_HVBAT_VOLTAGE: 313.15
+  response: 72B0562480D7A53
+- expected_values:
+    CX60_HVBAT_VOLTAGE: 327.64
+  response: 72B0562480D7FFC
+- expected_values:
+    CX60_HVBAT_VOLTAGE: 330.24
+  response: 72B0562480D8100
+- expected_values:
+    CX60_HVBAT_VOLTAGE: 391.68
+  response: 72B0562480D9900

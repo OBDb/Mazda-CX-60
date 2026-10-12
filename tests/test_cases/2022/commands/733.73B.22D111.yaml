@@ -1,0 +1,17 @@
+command_id: 733.73B.22D111
+test_cases:
+- expected_values:
+    CX60_CTRL_MODULE_POWER: 13.1
+  response: 73B0462D11183
+- expected_values:
+    CX60_CTRL_MODULE_POWER: 13.8
+  response: 73B0462D1118A
+- expected_values:
+    CX60_CTRL_MODULE_POWER: 14
+  response: 73B0462D1118C
+- expected_values:
+    CX60_CTRL_MODULE_POWER: 14.1
+  response: 73B0462D1118D
+- expected_values:
+    CX60_CTRL_MODULE_POWER: 14.2
+  response: 73B0462D1118E

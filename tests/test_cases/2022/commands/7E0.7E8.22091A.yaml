@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22091A
+test_cases:
+- expected_values:
+    CX60_ETC_DSD_DEG: 0.80078
+  response: 7E80562091A019A
+- expected_values:
+    CX60_ETC_DSD_DEG: 5.99805
+  response: 7E80562091A0BFF
+- expected_values:
+    CX60_ETC_DSD_DEG: 20.50195
+  response: 7E80562091A2901
+- expected_values:
+    CX60_ETC_DSD_DEG: 84.59961
+  response: 7E80562091AA933

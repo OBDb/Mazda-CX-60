@@ -1,0 +1,11 @@
+command_id: 723.72B.22DCE1
+test_cases:
+- expected_values:
+    CX60_IG_ON_TIMER: 0
+  response: 72B0562DCE10000
+- expected_values:
+    CX60_IG_ON_TIMER: 25.58333
+  response: 72B0562DCE105FF
+- expected_values:
+    CX60_IG_ON_TIMER: 153.83333
+  response: 72B0562DCE1240E

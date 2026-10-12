@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22DD01|fc=1
+test_cases:
+- expected_values:
+    CX60_ODO: 55336
+  response: 7E80662DD0100D828
+- expected_values:
+    CX60_ODO: 58876
+  response: 7E80662DD0100E5FC
+- expected_values:
+    CX60_ODO: 59650
+  response: 7E80662DD0100E902
+- expected_values:
+    CX60_ODO: 60981
+  response: 7E80662DD0100EE35

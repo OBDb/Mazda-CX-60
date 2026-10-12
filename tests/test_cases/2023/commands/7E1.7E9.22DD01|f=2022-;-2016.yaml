@@ -1,0 +1,7 @@
+command_id: 7E1.7E9.22DD01|f=2022-;-2016
+test_cases:
+- expected_values:
+    CX60_TRANS_ODO: 43770
+  response: |-
+    7E80662DD0100AAFA
+    7E90662DD0100AAFA

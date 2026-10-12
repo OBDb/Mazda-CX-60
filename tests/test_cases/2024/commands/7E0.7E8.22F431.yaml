@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22F431
+test_cases:
+- expected_values:
+    CX60_DIST_DTC_CLR: 302
+  response: 7E80562F431012E
+- expected_values:
+    CX60_DIST_DTC_CLR: 518
+  response: 7E80562F4310206
+- expected_values:
+    CX60_DIST_DTC_CLR: 1022
+  response: 7E80562F43103FE
+- expected_values:
+    CX60_DIST_DTC_CLR: 1100
+  response: 7E80562F431044C

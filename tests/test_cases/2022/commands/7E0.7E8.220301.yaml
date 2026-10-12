@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.220301
+test_cases:
+- expected_values:
+    CX60_MAP: 0.69922
+  response: 7E80562030102CC
+- expected_values:
+    CX60_MAP: 3.75
+  response: 7E8056203010F00
+- expected_values:
+    CX60_MAP: 3.99902
+  response: 7E8056203010FFF
+- expected_values:
+    CX60_MAP: 4.00098
+  response: '7E8056203011001'

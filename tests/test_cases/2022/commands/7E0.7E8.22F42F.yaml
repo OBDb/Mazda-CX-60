@@ -1,0 +1,38 @@
+command_id: 7E0.7E8.22F42F
+test_cases:
+- expected_values:
+    CX60_FLI: 0
+  response: 7E80462F42F00
+- expected_values:
+    CX60_FLI: 14.11765
+  response: |-
+    7E80462F42F24
+    7EA0462F42F24
+- expected_values:
+    CX60_FLI: 18.43137
+  response: |-
+    7E80462F42F2F
+    7EA0462F42F2F
+- expected_values:
+    CX60_FLI: 18.82353
+  response: |-
+    7E80462F42F30
+    7EA0462F42F00
+- expected_values:
+    CX60_FLI: 92.15686
+  response: |-
+    7E80462F42FEB
+    7EA0462F42FF4
+- expected_values:
+    CX60_FLI: 98.03922
+  response: 7E80462F42FFA
+- expected_values:
+    CX60_FLI: 98.03922
+  response: |-
+    7E80462F42FFA
+    7EA0462F42FF7
+- expected_values:
+    CX60_FLI: 18.82353
+  response: |-
+    7EA0462F42F00
+    7E80462F42F30
