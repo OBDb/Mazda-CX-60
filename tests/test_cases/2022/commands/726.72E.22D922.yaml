@@ -1,8 +1,8 @@
 command_id: 726.72E.22D922
 test_cases:
 - expected_values:
-    CX60_TP_FL_726: 32.4
-  response: 72E0462D922A2
+    CX60_TP_FL_726: 32.2
+  response: 72E0462D922A1
 - expected_values:
     CX60_TP_FL_726: 41.6
   response: 72E0462D922D0
