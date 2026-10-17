@@ -50,6 +50,7 @@ supported_commands_by_ecu:
   "775":
   - 775.77D.22D111:CX60_TAILGATE_POWER_SUP
   "7DF":
+  - 7DF.0144
   - 7DF.221310
   - 7DF.221E12
   - 7DF.221E1C
