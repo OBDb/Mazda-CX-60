@@ -4,8 +4,8 @@ test_cases:
     CX60_HVBAT_VOLTAGE: 319.48
   response: 72B0562480D7CCC
 - expected_values:
-    CX60_HVBAT_VOLTAGE: 335.32
-  response: 72B0562480D82FC
+    CX60_HVBAT_VOLTAGE: 327.64
+  response: 72B0562480D7FFC
 - expected_values:
     CX60_HVBAT_VOLTAGE: 337.92
   response: 72B0562480D8400
