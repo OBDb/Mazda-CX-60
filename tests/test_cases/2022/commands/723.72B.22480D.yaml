@@ -1,8 +1,8 @@
 command_id: 723.72B.22480D
 test_cases:
 - expected_values:
-    CX60_HVBAT_VOLTAGE: 319.48
-  response: 72B0562480D7CCC
+    CX60_HVBAT_VOLTAGE: 317.56
+  response: 72B0562480D7C0C
 - expected_values:
     CX60_HVBAT_VOLTAGE: 327.64
   response: 72B0562480D7FFC
